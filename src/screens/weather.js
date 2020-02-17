@@ -3,7 +3,7 @@ import {StyleSheet, View, Text, TextInput} from 'react-native';
 
 const weather = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={styles.content}>
       <View style={styles.comun_box}>
         <TextInput placeholder="Nome da Cidade" />
       </View>
