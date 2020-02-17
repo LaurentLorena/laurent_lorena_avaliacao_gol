@@ -1,11 +1,13 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, View, Text, TextInput} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
-const weather = () => {
+const weather = ({navigation}) => {
   return (
     <View style={styles.content}>
       <View style={styles.comun_box}>
-        <TextInput placeholder="Nome da Cidade" />
+        <TouchableOpacity onPress={() => navigation.navigate('CitiesScreen')}>
+          <Text>Nome da Cidade</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.comun_box}>
         <Text>mapa</Text>
